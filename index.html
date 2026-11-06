@@ -3,22 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello World with Typescript</title>
+    <title>Cine Irene</title>
   </head>
   <body class="min-h-screen bg-slate-100 text-slate-900">
-    <main class="mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center gap-6 p-6">
-      <h1 class="text-4xl font-bold tracking-tight">Hello World with Typescript</h1>
+    <main class="mx-auto flex min-h-screen max-w-3xl flex-col items-center gap-6 p-6">
+      <h1 class="text-4xl font-bold tracking-tight">Cine Irene</h1>
 
-      <section class="w-full max-w-md overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-        <img
-          src="/rigo-baby.jpg"
-          alt="Hello Rigo"
-          class="h-64 w-full bg-slate-50 object-contain p-2"
-        />
-        <div class="p-5">
-          <h2 class="text-xl font-semibold text-slate-900">Hello Rigo</h2>
-          <p id="app" class="mt-2 text-sm text-slate-600"></p>
-        </div>
+      <div class="w-3/4 rounded-b-3xl bg-slate-300 py-2 text-center text-sm tracking-widest text-slate-600">
+        PANTALLA
+      </div>
+
+      <section id="sala" class="flex flex-col gap-2"></section>
+
+      <p id="mensaje" class="h-6 text-sm font-medium"></p>
+
+      <section class="flex flex-wrap justify-center gap-4 text-sm">
+        <p id="conteo" class="rounded-lg bg-white px-4 py-2 shadow-sm"></p>
+        <p id="pareja" class="rounded-lg bg-white px-4 py-2 shadow-sm"></p>
+      </section>
+
+      <section class="flex gap-4 text-sm">
+        <span class="rounded border border-emerald-500 bg-emerald-50 px-2 font-bold text-emerald-800">L</span> Libre
+        <span class="rounded border border-red-400 bg-red-50 px-2 font-bold text-red-800">X</span> Ocupado
+        <span class="rounded border border-amber-600 bg-amber-300 px-2 font-bold text-amber-900">L</span> Pareja contigua
       </section>
     </main>
     <script type="module" src="/src/main.ts"></script>
